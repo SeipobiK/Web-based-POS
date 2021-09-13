@@ -183,6 +183,9 @@ CREATE TABLE `supplier` (
   `PHONE_NUMBER` varchar(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+INSERT INTO `supplier` (`SUPPLIER_ID`, `COMPANY_NAME`, `LOCATION_ID`, `PHONE_NUMBER`) VALUES
+(11, 'Maseru cash and carry', 114, '223257540');
+
 
 --
 -- Table structure for table `transaction`

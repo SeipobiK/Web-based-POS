@@ -7,12 +7,13 @@ include'../includes/connection.php';
               $emp = $_POST['empid'];
               $user = $_POST['username'];
               $pass = $_POST['password'];
+
         
               switch($_GET['action']){
                 case 'add':    
                     $query = "INSERT INTO users
                               (ID, EMPLOYEE_ID, USERNAME, PASSWORD, TYPE_ID)
-                              VALUES (Null,'{$emp}','{$user}',sha1('{$pass}'),'2')";
+                              VALUES (Null,'{$emp}','{$user}',('{$pass}'),'2')";
                     mysqli_query($db,$query)or die ('Error in updating users in '. $query);
                 break;
               }

@@ -60,7 +60,7 @@ window.onload = function() {
 </script>
           <center><div class="card shadow mb-4 col-xs-12 col-md-8 border-bottom-primary">
             <div class="card-header py-3">
-              <h4 class="m-2 font-weight-bold text-primary">Add Employee</h4>
+              <h4 class="m-2 font-weight-bold text-primary">Add Employ</h4>
             </div>
             <a href="employee.php?action=add" type="button" class="btn btn-primary bg-gradient-primary">Back</a>
             <div class="card-body">

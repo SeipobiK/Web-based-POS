@@ -106,7 +106,12 @@ function dateDiffInDays($date1, $date2)
                                     <i class="fas fa-fw fa-edit"></i> Edit
                                   </a>
                                 </li>
+                               
+
                             </ul>
+                            <a href="pro_del.php?action=delete&id='.$row['BARCODE'].'">
+                            <div class="btn bg-gradient-danger btn-danger"><i class="fas fa-fw fa-trash"></i></div>
+
                             </div>
                           </div> </td>';
                 echo '</tr> ';

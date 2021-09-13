@@ -31,7 +31,7 @@ $time = $_SERVER['REQUEST_TIME'];
 /**
 * for a 30 minute timeout, specified in seconds
 */
-$timeout_duration =1200;
+$timeout_duration =120000;
 
 /**
 * Here we look for the user's LAST_ACTIVITY timestamp. If
@@ -42,7 +42,7 @@ if (isset($_SESSION['LAST_ACTIVITY']) &&
    ($time - $_SESSION['LAST_ACTIVITY']) > $timeout_duration) {
     session_unset();
     session_destroy();
-    session_start();
+   // session_start();
 }
 
 /**
